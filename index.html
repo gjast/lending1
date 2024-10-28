@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="lending">
+      <header>
+        <div class="Header_logo">
+          <img src="./asset/Vector.svg" class="logo" />
+          <img src="./asset/logoVector.svg" class="logo_text" />
+        </div>
+
+        <div class="Header_info">
+          <ul>
+            <li><a href="#" class="element-info">Главная</a></li>
+            <li><a href="#" class="element-info">Про гида</a></li>
+            <li><a href="#" class="element-info">Программа тура</a></li>
+            <li><a href="#" class="element-info">Стоимость</a></li>
+            <li><a href="#" class="element-info">Блок</a></li>
+            <li><a href="#" class="element-info">Контакты</a></li>
+
+            <li>
+              <a href="#" class="element-info button-info">Консультация</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="main_slogan">
+        <h1>Насладись прогулкой в горах с командой единомышленников</h1>
+        <form class="search_form">
+          <div class="location_grup">
+            <select id="location" name="location" class="form-control">
+              <option value="" disabled selected class="disabled">
+                Локация для тура
+              </option>
+              <option value="location1">Локация 1</option>
+              <option value="location2">Локация 2</option>
+              <option value="location3">Локация 3</option>
+              <option value="location4">Локация 4</option>
+            </select>
+          </div>
+
+          <div class="data_grup">
+            <div class="icon_input" id="iconInput"></div>
+            <input
+              class="data_input"
+              type="text"
+              id="datepicker"
+              placeholder="Дата похода"
+            />
+          </div>
+
+          <button type="submit" class="button_submit">Найти программу</button>
+        </form>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
